@@ -1,0 +1,16 @@
+{
+    "input": [
+        {
+            "id":"ProjectId:98765,JobId:54321,ResourceId:45678",
+            "type": "nae.pknca.input.data",
+            "source": "https://nuventra.com/fileserver/",
+            "datacontenttype": "text/csv"
+        },
+        {
+            "id":"ProjectId:98765,JobId:54321,ResourceId:76543",
+            "type": "nae.pknca.input.config",
+            "source": "https://nuventra.com/fileserver/",
+            "datacontenttype": "application/json"
+        }
+    ]
+}

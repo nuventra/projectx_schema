@@ -1,0 +1,28 @@
+{
+    "specversion" : "0.2",
+    "id": "ProjectId:98765,JobId:54321,TaskId:12345,EventId:34567",
+    "type": "https://nuventra.com/event/nae.ProcessStartRequested.EventV1",
+    "source":"https://nuventra.com/event/nae/ProcessStartRequested",
+    "datacontenttype":"application/json",
+    "dataschema":"https://nuventra.com/event/nae/ProcessStartRequested/DataV1",
+    "subject":"nae.pknca.ev",
+    "time":"2021-3-17T00:05:32.000Z",
+    "data": {
+        "input": [
+            {
+                "id":"ProjectId:98765,JobId:54321,ResourceId:76543",
+                "type": "nae.pknca.input.config",
+                "source": "https://nuventra.com/fileserver/",
+                "datacontenttype": "application/json",
+                "name": "config.json"
+            },
+            {
+                "id":"ProjectId:98765,JobId:54321,ResourceId:45678",
+                "type": "nae.pknca.input.data",
+                "source": "https://nuventra.com/fileserver/",
+                "datacontenttype": "text/csv",
+                "name": "adpc.csv"
+            }
+        ]
+    }
+}

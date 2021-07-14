@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "specversion": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "source": {
+            "type": "string"
+        },
+        "datacontenttype": {
+            "type": "string"
+        },
+        "dataschema": {
+            "type": "string"
+        },
+        "subject": {
+            "enum": [ "nae.pknca.ev", "nae.pknca.iv" ]
+        },
+        "time": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "input": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "type": "string"
+                                },
+                                "datacontenttype": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type",
+                                "source",
+                                "datacontenttype",
+                                "name"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "type": "string"
+                                },
+                                "datacontenttype": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type",
+                                "source",
+                                "datacontenttype",
+                                "name"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "input"
+            ]
+        }
+    },
+    "required": [
+        "specversion",
+        "id",
+        "type",
+        "source",
+        "datacontenttype",
+        "dataschema",
+        "subject",
+        "time",
+        "data"
+    ]
+}
