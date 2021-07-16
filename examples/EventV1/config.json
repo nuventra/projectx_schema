@@ -1,0 +1,26 @@
+{
+  "routeOfAdministration":"EV",
+  "matrix":"Plasma",
+  "method":"lin up/log down",
+  "requiredPointsInTerminalPhase":3,
+  "partialAreasCount":3,
+  "partialAreasStartTimes":[0,0,0],
+  "partialAreasStopTimes":[5.1,6.3,13],
+  "ncaTimeField":"MRRELTM",
+  "ncaConcentrationField":"ACONC",
+  "uniquePkProfilesSortingVars":["SUBJID","TRTP","AVISITN"],
+  "finalOutputParams":["Cmax","AUClast","Tlast","Tmax","Clast"],
+  "minAdjustedR2": 0.80,
+  "aucExtrapolationCriterion": 40,
+  "profiles": [
+    {
+      "profileKeys": {
+        "SUBJID":"foo",
+        "TRTP":"foo1",
+        "AVISITN":"foo3"
+      },
+      "startTime":"NA",
+      "stopTime":"NA"
+    }
+  ]
+}
