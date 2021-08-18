@@ -11,33 +11,8 @@
     "input": [
       {
         "id": "ProjectId:a6e75410-34cd-40d1-9c21-07d0f0c46d5f,ResourceId:371040db-c619-4f00-9dc0-a1ec230560c0",
-        "data": {
-          "routeOfAdministration": "EV",
-          "matrix": "Plasma",
-          "method": "lin up/log down",
-          "requiredPointsInTerminalPhase": 3,
-          "partialAreasCount": 3,
-          "partialAreasStartTimes": [0,0,0],
-          "partialAreasStopTimes": [5.1,6.3,13],
-          "ncaTimeField": "MRRELTM",
-          "ncaConcentrationField": "ACONC",
-          "uniquePkProfilesSortingVars": ["SUBJID","TRTP","AVISITN"],
-          "finalOutputParams": ["Cmax","AUClast","Tlast","Tmax","Clast"],
-          "minAdjustedR2": 0.8,
-          "aucExtrapolationCriterion": 40,
-          "profiles": [
-            {
-              "profileKeys": {
-                "SUBJID": "foo",
-                "TRTP": "foo1",
-                "AVISITN": "foo3"
-              },
-              "startTime": "NA",
-              "stopTime": "NA"
-            }
-          ]
-        },
-        "datacontenttype": "application/json",
+        "data": "route_of_administration,matrix,method,required_points_in_terminal_phase,partial_areas_count,partial_areas_start_times_0,partial_areas_start_times_1,partial_areas_start_times_2,partial_areas_stop_times_0,partial_areas_stop_times_1,partial_areas_stop_times_2,nca_time_field,nca_concentration_field,unique_pk_profiles_sorting_vars_0,unique_pk_profiles_sorting_vars_1,unique_pk_profiles_sorting_vars_2,final_output_params_0,final_output_params_1,final_output_params_2,final_output_params_3,final_output_params_4,min_adjusted_r2,auc_extrapolation_criterion,profiles_profile_keys_0,profiles_profile_keys_1,profiles_profile_keys_2,profiles_start_time,profiles_stop_time\nEV,Plasma,lin up/log down,3,3,0,0,0,5.1,6.3,13,MRRELTM,ACONC,SUBJID,TRTP,AVISITN,Cmax,AUClast,Tlast,Tmax,Clast,0.80,40,foo,foo1,foo3,NA,NA",
+        "datacontenttype": "application/csv",
         "type": "nae.pknca.input.config"
       },
       {
